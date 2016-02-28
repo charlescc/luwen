@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>		
+		<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="./style/reset.css"></link>
+		<link rel="stylesheet" href="./style/index.css"></link>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class='topbar'>
+			<div class='screen-hd'>
+				<div class='right' id='user-site'>
+					<span>Charles</span>
+					<a class='exit'>退出</a>
+				</div>
+			</div>
+		</div>
+		<div class='bd'>
+			<div class='screen-hd'>
+				<div class='right' id='user-detail'>
+					<div id='user_info'>
+						<div class='user-pic'></div>
+						<p class='mod_user_name'>Charles</p>
+						<p>LV2</p>
+				    </div>
+				    <ul class='user_statistic'>
+				    	<li class>
+				    		<strong>14</strong>
+				    		<span>被点</span>
+				    	</li>
+				    	<li class>
+				    		<strong>14</strong>
+				    		<span>被点</span>
+				    	</li>
+				    	<li class='last'>
+				    		<strong>14</strong>
+				    		<span>被点</span>
+				    	</li>
+				    </ul>
+				    <div class='user_vip'>
+				    	<p>您的收听经验值，越多的点播，升级越快</p>
+				    	<div class="progress progress-striped active" id='myprocess'>
+						   <div class="progress-bar progress-bar-success" role="progressbar" 
+						      aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
+						      style="width: 40%;">
+						      <span class="sr-only">88/100</span>
+						   </div>
+						</div>
+				    </div>
+				</div>
+				<div id='music-container'>
+					<div class='mod_mv'>
+						<div class='mod_title'><h2>为您推荐</h2></div>
+						<div class='mod_cp'>
+							<a class='cp cp_prev ' tt='cp_disabled'></a>
+							<a class='cp cp_next'></a>
+						</div>
+						<div class='mod_content'>
+							<ul class='mod_mv_list'>
+								<li>
+									<a class='mod_poster_160'>
+										<img alt="活着是最好的死亡" title="活着是最好的死亡" src="http://i.gtimg.cn/music/common//upload/uploadt_y_mv_conf/1451031812692185970.jpg?max_age=2592000"/>
+									</a>
+									<p>
+										<a href="javascript:;"  class="mv_name" title="活着是最好的死亡">活着是最好的死亡</a>
+										<span>-</span>
+										<a target="contentFrame" href="http://i.y.qq.com/v8/fcg-bin/fcg_v8_singer_detail_cp.fcg?tpl=20&amp;singermid=000hNnWC3kko2c" class="singer_name" title="蔡健雅">蔡健雅</a>
+									</p>
+									<p>竭尽所能地享受放纵</p>
+									<p><span class="count">19</span><span class="date">2015-12-25</span></p>
+								</li>
+								<li>
+									<a class='mod_poster_160'>
+										<img alt="浮夸" title="浮夸" src="http://vpic.video.qq.com/23080250/m0010KmD8C5_160_90_3.jpg?max_age=2592000"/>
+									</a>
+									<p>
+										<a href="javascript:;"  class="mv_name" title="活着是最好的死亡">浮夸</a>
+										<span>-</span>
+										<a target="contentFrame" href="http://i.y.qq.com/v8/fcg-bin/fcg_v8_singer_detail_cp.fcg?tpl=20&amp;singermid=000hNnWC3kko2c" class="singer_name" title="蔡健雅">陈奕迅</a>
+									</p>
+									<p>正常人够我富议论性么</p>
+									<p><span class="count">26</span><span class="date">2005-06-07</span></p>
+								</li>
+								<li>
+									<a class='mod_poster_160'>
+										<img alt="乐作人生" title="乐作人生" src="http://i.gtimg.cn/music/common//upload/uploadt_y_mv_conf/1451548443010238790.jpg?max_age=2592000"/>
+									</a>
+									<p>
+										<a href="javascript:;"  class="mv_name" title="活着是最好的死亡">乐作人生</a>
+										<span>-</span>
+										<a target="contentFrame" href="http://i.y.qq.com/v8/fcg-bin/fcg_v8_singer_detail_cp.fcg?tpl=20&amp;singermid=000hNnWC3kko2c" class="singer_name" title="蔡健雅">钟汉良</a>
+									</p>
+									<p>努力遇见更好的自己</p>
+									<p><span class="count">21</span><span class="date">2015-12-31</span></p>
+								</li>
+								<li>
+									<a class='mod_poster_160'>
+										<img alt="爱情原来" title="爱情原来" src="http://i.gtimg.cn/music/common//upload/uploadt_y_mv_conf/1451534053308323010.jpg?max_age=2592000">
+									</a>
+									<p>
+										<a href="javascript:;"  class="mv_name" title="没那么简单">没那么简单</a>
+										<span>-</span>
+										<a target="contentFrame" href="http://i.y.qq.com/v8/fcg-bin/fcg_v8_singer_detail_cp.fcg?tpl=20&amp;singermid=0003Aksc3Iisgq" class="singer_name" title="黄小琥">黄小琥</a>
+									</p>
+									<p>延续大龄女子的情歌自白</p>
+									<p><span class="count">17</span><span class="date">2009-12-18</span></p>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class='mod_mv'>
+						<div class='mod_1'>
+							<div class='mod_title'><h2>新曲歌单</h2></div>
+							<div class='mod_content'>
+								<ol class='mod_list'>
+									<li >
+										<span class='index'>01</span>
+										<span class='music_name'>
+											<a>淘汰</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>陈奕迅</a>
+									</li>
+									<li >
+										<span class='index'>02</span>
+										<span class='music_name'>
+											<a>不完美小孩</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>TFBOYS</a>
+									</li>
+									<li >
+										<span class='index'>03</span>
+										<span class='music_name'>
+											<a>野生动物</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>李荣浩</a>
+									</li>
+									<li >
+										<span class='index'>04</span>
+										<span class='music_name'>
+											<a>独舞</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>林俊杰</a>
+									</li>
+									<li >
+										<span class='index'>05</span>
+										<span class='music_name'>
+											<a>感恩节</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>范玮琪</a>
+									</li>
+									<li >
+										<span class='index'>06</span>
+										<span class='music_name'>
+											<a>唐人街</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>李宇春</a>
+									</li>
+									<li >
+										<span class='index'>07</span>
+										<span class='music_name'>
+											<a>西风</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>阿鲁阿卓</a>
+									</li>
+									<li >
+										<span class='index'>08</span>
+										<span class='music_name'>
+											<a>星星泪</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>宋茜</a>
+									</li>
+									<li >
+										<span class='index'>09</span>
+										<span class='music_name'>
+											<a>断片</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>罗志祥</a>
+									</li>
+									<li >
+										<span class='index'>10</span>
+										<span class='music_name'>
+											<a>让时间说爱（铁达时广告主题曲）</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>古巨基</a>
+									</li>
+								</ol>
+							</div>
+						</div>
+						<div class='mod_2'>
+							<div class='mod_title'><h2>热播榜</h2></div>
+							<div class='mod_content'>
+								<ol class='mod_list'>
+									<li >
+										<span class='index'>01</span>
+										<span class='music_name'>
+											<a>夏洛特烦恼</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>金志文</a>
+									</li>
+									<li >
+										<span class='index'>02</span>
+										<span class='music_name'>
+											<a>青春修炼手册</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>TFBOYS</a>
+									</li>
+									<li >
+										<span class='index'>03</span>
+										<span class='music_name'>
+											<a>十年</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>陈奕迅</a>
+									</li>
+									<li >
+										<span class='index'>04</span>
+										<span class='music_name'>
+											<a>一千年以后</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>林俊杰</a>
+									</li>
+									<li >
+										<span class='index'>05</span>
+										<span class='music_name'>
+											<a>一个像夏天一个像秋天</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>范玮琪</a>
+									</li>
+									<li >
+										<span class='index'>06</span>
+										<span class='music_name'>
+											<a>光辉岁月</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>Beyond</a>
+									</li>
+									<li >
+										<span class='index'>07</span>
+										<span class='music_name'>
+											<a>偏偏喜欢你</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>陈百强</a>
+									</li>
+									<li >
+										<span class='index'>08</span>
+										<span class='music_name'>
+											<a>无所谓</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>杨坤</a>
+									</li>
+									<li >
+										<span class='index'>09</span>
+										<span class='music_name'>
+											<a>往事随风</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>齐秦</a>
+									</li>
+									<li >
+										<span class='index'>10</span>
+										<span class='music_name'>
+											<a>领悟</a>
+										</span>
+										<span>-</span>
+										<a class='singer_name'>辛晓琪</a>
+									</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class='back_sheet'>
+			<div class='sub_container'>
+				<div class='score_comment'>
+					<div class="comment_top">
+				        <h2>评论</h2>
+				        <span class="cc">3 条评论</span>
+				        <div class='clear'></div>
+				    </div>
+				    <div class='comment_middle'>
+				    	<div class='profile'>
+				    		<img src='http://mat1.gtimg.com/www/mb/images/head_50.jpg'/>
+				    	</div>
+				    	<div class='input'>
+				    		<textarea placeholder='写下您的评论'></textarea>
+				    		<div class='bottom'>
+				    			<div id="star">
+									<span>您的评分</span>
+									<ul>
+										<li><a href="javascript:;">1</a></li>
+										<li><a href="javascript:;">2</a></li>
+										<li><a href="javascript:;">3</a></li>
+										<li><a href="javascript:;">4</a></li>
+										<li><a href="javascript:;">5</a></li>
+									</ul>
+									<span></span>
+									<p></p>
+								</div>
+				    			<a class='publish-btn'>发表</a>
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class='comment_list'>
+				    	<ul>
+				    		<li class='comment-item'>
+				    			<div class='avatar'>
+				    				<img src="http://p1.pstatp.com/thumb/9858/4831974853"/>
+				    			</div>
+				    			<div class='comment-content'>
+				    				<div class='name'>Charles</div>
+				    				<div class='content'>
+				    					这首歌动听，曲风多变，是我喜欢的feel
+				    				</div>
+				    				<div class='comment_actions'>
+				    					<span class='time'>01-03 10:41</span>
+				    					<span class='action'>
+				    						<a class='comment_digg'>
+				    							5</a>
+				    					</span>
+				    					<div class='clear'></div>
+				    				</div>
+				    			</div>
+				    			<div class='clear'></div>
+				    		</li>
+				    		<li class='comment-item'>
+				    			<div class='avatar'>
+				    				<img src="http://p0.pstatp.com/origin/3795/3047680722"/>
+				    			</div>
+				    			<div class='comment-content'>
+				    				<div class='name'>Charles_num2</div>
+				    				<div class='content'>
+				    					听起来一般般，不太喜欢这么紧张的旋律
+				    				</div>
+				    				<div class='comment_actions'>
+				    					<span class='time'>01-03 10:41</span>
+				    					<span class='action'>
+				    						<a class='comment_digg'>
+				    							6</a>
+				    					</span>
+				    					<div class='clear'></div>
+				    				</div>
+				    			</div>
+				    			<div class='clear'></div>
+				    		</li>
+				    		<li class='comment-item'>
+				    			<div class='avatar'>
+				    				<img src="http://p0.pstatp.com/origin/3791/5070639578"/>
+				    			</div>
+				    			<div class='comment-content'>
+				    				<div class='name'>Charles_num3</div>
+				    				<div class='content'>
+				    					好喜欢，好喜欢，好喜欢，重要的事情说三遍！！！
+				    				</div>
+				    				<div class='comment_actions'>
+				    					<span class='time'>01-03 10:42</span>
+				    					<span class='action'>
+				    						<a class='comment_digg'>
+				    							8</a>
+				    					</span>
+				    					<div class='clear'></div>
+				    				</div>
+				    			</div>
+				    			<div class='clear'></div>
+				    		</li>
+				    	</ul>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class='footer'></div>
+
+	</body>
+	<script type="text/javascript"> 
+		window.onload = function (){
+
+			var oStar = document.getElementById("star");
+			var aLi = oStar.getElementsByTagName("li");
+			var oUl = oStar.getElementsByTagName("ul")[0];
+			var oSpan = oStar.getElementsByTagName("span")[1];
+			var oP = oStar.getElementsByTagName("p")[0];
+			var i = iScore = iStar = 0;
+			var aMsg = [
+						"讨厌|整首歌的风格很不搭调，非常不喜欢",
+						"不喜欢|歌曲部分的风格你才能接受，不喜欢",
+						"一般|听起来勉勉强强",
+						"喜欢|悦耳动听，符合我的品位",
+						"非常喜欢|非常好听，强力推荐"
+						]
+			
+			for (i = 1; i <= aLi.length; i++){
+				aLi[i - 1].index = i;
+				
+				//鼠标移过显示分数
+				aLi[i - 1].onmouseover = function (){
+					fnPoint(this.index);
+					//浮动层显示
+					oP.style.display = "none";
+					//计算浮动层位置
+					oP.style.left = oUl.offsetLeft + this.index * this.offsetWidth - 104 + "px";
+					//匹配浮动层文字内容
+					oP.innerHTML = "<em><b>" + this.index + "</b> 分 " + aMsg[this.index - 1].match(/(.+)\|/)[1] + "</em>" + aMsg[this.index - 1].match(/\|(.+)/)[1]
+				};
+				
+				//鼠标离开后恢复上次评分
+				aLi[i - 1].onmouseout = function (){
+					fnPoint();
+					//关闭浮动层
+					oP.style.display = "none"
+				};
+				
+				//点击后进行评分处理
+				aLi[i - 1].onclick = function (){
+					iStar = this.index;
+					oP.style.display = "none";
+					oSpan.innerHTML = "<strong>" + (this.index) + " 分</strong> (" + aMsg[this.index - 1].match(/\|(.+)/)[1] + ")"
+				}
+			}
+			
+			//评分处理
+			function fnPoint(iArg){
+				//分数赋值
+				iScore = iArg || iStar;
+				for (i = 0; i < aLi.length; i++) aLi[i].className = i < iScore ? "on" : "";	
+			}
+			
+		};
+	</script>
+	
+	<script src='./scripts/jquery.min.js'></script>
+	<script src='./scripts/index.js'></script>
+</html>	

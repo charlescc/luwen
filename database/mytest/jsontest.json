@@ -1,0 +1,12 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/mytest/jsontest.json",
+     "interfaceName": "/mytest/jsontest.json",
+     "lazyLoad": "no",
+     "responseParametersType": true,
+     "responseJson": "{\n\t\"user_id\":12,\n\t\"count\":10,\n\t\"set\":[{\n\t\t\"music_id\":13,\n\t\t\"singer\":\"陈奕迅\",\n\t\t\"music_name\":\"淘汰\",\n\t\t\"pic_url\":\".......\",\n\t\t\"music_url\":\".......\"\n\t}]\n}"
+}

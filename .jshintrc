@@ -1,0 +1,9 @@
+{
+  "undef": true,
+  "unused": true,
+  "eqeqeq":true,
+  "curly":true,
+  "boss":true,
+  "notypeof":true,
+  "predef": [  ]
+}
